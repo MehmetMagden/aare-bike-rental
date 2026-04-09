@@ -1,0 +1,15 @@
+# Python sanal ortamı (Burası en önemlisi!)
+venv/
+ENV/
+
+# Python önbellek dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test sonuçları ve klasörleri
+.pytest_cache/
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
