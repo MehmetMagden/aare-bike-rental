@@ -2,7 +2,7 @@ import pytest
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file), '../app')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../app')))
 from app import app
 @pytest.fixture
 def client():
@@ -10,13 +10,13 @@ def client():
         yield client
 
 def test_health_check(client):
-    """System ayakta mı"""
+    """System ayakta mi?"""
     res = client.get('/health')
     assert res.status_code == 200
     assert res.get_json()['status'] == 'healthy'
     
 def test_health_check(client):
-    """System ayakta mı"""
+    """System ayakta mi"""
     res = client.get('/health')
     assert res.status_code == 200
     assert res.get_json()['status'] == 'healthy'
