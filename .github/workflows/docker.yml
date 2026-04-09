@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Code
-              uses: actions/checout@v4
+              uses: actions/chechout@v4
 
             - name: Setup Python
               uses: actions/setup-python@v5
