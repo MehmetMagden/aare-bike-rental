@@ -10,7 +10,7 @@ bikes =[
 
 @app. route('/health')
 def health():
-    return jsonify({"status": "healty", "service": "Aare Bike Rental"}), 200
+    return jsonify({"status": "healthy", "service": "Aare Bike Rental"}), 200
 
 @app.route('/bikes')
 def get_bikes():
