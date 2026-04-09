@@ -14,6 +14,12 @@ def test_health_check(client):
     res = client.get('/health')
     assert res.status_code == 200
     assert res.get_json()['status'] == 'healthy'
+    
+def test_health_check(client):
+    """System ayakta mı"""
+    res = client.get('/health')
+    assert res.status_code == 200
+    assert res.get_json()['status'] == 'healthy'
 
 def test_get_bikes(client):
     """Bisiklet listesi geliyor mu?"""
