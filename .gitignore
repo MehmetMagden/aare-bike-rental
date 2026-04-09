@@ -1,6 +1,7 @@
 # Python sanal ortamı (Burası en önemlisi!)
 venv/
 ENV/
+unWantedFiles/
 
 # Python önbellek dosyaları
 __pycache__/
